@@ -1,18 +1,22 @@
 'use strict';
 
-var adin = 1;
-var dva = 100;
-console.log(adin);
-console.log(dva);
-
-let persone = {
-    name:"Slon",
-    age:22,
-    isMarried: false
+var money = prompt('Ваш бюджет на месяц?',"25000"),
+    time = prompt('Введите дату в формате YYYY-MM-DD',"30-04-2019");
+var income= [];
+var optionalExpenses ={};
+var oneQ = prompt('Введите обязательную статью расходов в этом месяце',"Еда"),
+    twoQ = prompt("Во сколько обойдется?",'15000');
+var expenses = {
+[oneQ] : twoQ
 };
-console.log(persone['name']);
-let arr = ['plum.png','orange.jpg', 'apple.bmp'];
-console.log(arr[0]);
 
-let answer = confirm('You are love me?');
-console.log(answer);
+var appData = {
+    budget : (money),
+    DataTime : (time),
+    expenses,
+    optionalExpenses,
+    income,
+    savings: false
+};
+console.log(appData);
+alert(appData.budget/30);
