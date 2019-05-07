@@ -1,2 +1,6 @@
-let arr = ['plum.png','orange.jpg', 'apple.bmp'];
-console.log(arr[0]);
+for(let i = 1; i < 8; i++){
+    if (i == 6){
+        continue
+    }
+    console.log(i);
+}
