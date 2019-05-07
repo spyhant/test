@@ -41,7 +41,6 @@ alert ("Ежедневный бюджет :" + appData.moneyPerDay)
 }
 detectDayBudget();
 
-
 function detectLevel (){
 if(appData.moneyPerDay <100){
     console.log("Минимальный уровень Достатка");
